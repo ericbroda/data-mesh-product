@@ -5,8 +5,8 @@ metadata:
   description: A collection of sample entities
 spec:
   targets:
-    - ./catalog/api-001.yaml
-    - ./catalog/dataproduct-001.yaml
-    - ./catalog/query-001.yaml
-    - ./catalog/schema-001.yaml
-    - ./catalog/org-001.yaml
+    - ./catalog/apis/api-001.yaml
+    - ./catalog/dataproducts/dataproduct-001.yaml
+    - ./catalog/queries/query-001.yaml
+    - ./catalog/schemas/schema-001.yaml
+    - ./catalog/orgs/org-001.yaml
