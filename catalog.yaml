@@ -10,3 +10,4 @@ spec:
     - ./catalog/queries/query-001.yaml
     - ./catalog/schemas/schema-001.yaml
     - ./catalog/orgs/org-001.yaml
+    - ./catalog/systems/system-001.yaml

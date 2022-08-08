@@ -1,0 +1,36 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: MyCompany
+spec:
+  owner: guest
+  domain: party-domain
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: MyCompany
+spec:
+  owner: guest
+  domain: account-domain
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: MyCompany
+spec:
+  owner: guest
+  domain: product-domain
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: MyCompany
+spec:
+  owner: guest
+  domain: transaction-domain
+---
