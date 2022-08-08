@@ -1,0 +1,12 @@
+query: |
+  SELECT * FROM party;
+---
+query: |
+  SELECT * FROM account;
+---
+query: |
+  SELECT * FROM product;
+---
+query: |
+  SELECT * FROM transaction;
+---

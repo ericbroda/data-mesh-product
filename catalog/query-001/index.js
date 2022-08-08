@@ -1,1 +1,0 @@
-console.log('Hello from dataproduct-001-query');
