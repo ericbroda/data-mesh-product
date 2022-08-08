@@ -1,0 +1,36 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "dataproduct-001"
+  title: "Data Product 001"
+  description: "Sample data product"
+  tags: ["java"]
+spec:
+  # Reserved fields
+  type: data-product
+  owner: user:guest
+  lifecycle: experimental
+  system: "Client Systems"
+  # Custom fields
+  summary:
+    name: "dataproduct-001"
+    title: "Data Product 001"
+    description: "Sample data product"
+    id: "002"
+    version: "v00.00.01"
+    owner: "Eric Broda"
+    domain: "client-domain"
+    categories: ["client"]
+    state: "active"
+    type: "client-360"
+    classification: "public"
+  schema:
+    link: "schema.json"
+  queries:
+    link: [
+      "query-001.sql",
+      "query-002.sql",
+      "query-003.sql"
+    ]
+  apis:
+    link: "openapi.json"

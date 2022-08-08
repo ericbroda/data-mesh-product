@@ -1,0 +1,95 @@
+{
+    "database": "sampledb",
+    "tables": [
+        {
+            "name": "Party",
+            "fields": [
+                {
+                    "name": "party_id",
+                    "type": "varchar(20)",
+                    "description": "Unique client identifier",
+                    "classification": "internal"
+                },
+                {
+                    "name": "party_type",
+                    "type": "varchar(50)",
+                    "description": "Party type: individual|business",
+                    "classification": "internal"
+                },
+                {
+                    "name": "full_legal_name",
+                    "type": "varchar(128)",
+                    "description": "Full legal name",
+                    "classification": "sensitive, PII"
+                },
+                {
+                    "name": "email_address",
+                    "type": "number",
+                    "description": "Email address",
+                    "classification": "sensitive, PII"
+                },
+                {
+                    "name": "phone",
+                    "type": "number",
+                    "description": "Mobile phone number",
+                    "classification": "sensitive, PII"
+                }
+            ],
+            "primarykey": "party_id"
+        },
+        {
+            "name": "Account",
+            "fields": [
+                {
+                    "name": "account_id",
+                    "type": "varchar(20)",
+                    "description": "Unique account identifier",
+                    "classification": "internal"
+                },
+                {
+                    "name": "party_id",
+                    "type": "varchar(50)",
+                    "description": "Account owner party identifier",
+                    "classification": "internal"
+                },
+                {
+                    "name": "product_id",
+                    "type": "varchar(128)",
+                    "description": "Account product identifier",
+                    "classification": "internal"
+                },
+                {
+                    "name": "currency",
+                    "type": "varchar(50)",
+                    "description": "Currency for this account",
+                    "classification": "internal"
+                },
+                {
+                    "name": "balance",
+                    "type": "varchar(20)",
+                    "description": "Account balance",
+                    "classification": "sensitive"
+                },
+                {
+                    "name": "status",
+                    "type": "varchar(128)",
+                    "description": "Account status: active|inactive",
+                    "classification": "internal"
+                },
+                {
+                    "name": "open_date",
+                    "type": "varchar(128)",
+                    "description": "Account opening date",
+                    "classification": "internal"
+                },
+                {
+                    "name": "description",
+                    "type": "varchar(128)",
+                    "description": "Account description",
+                    "classification": "internal"
+                }
+            ],
+            "primarykey": "party_id"
+        }
+    ]
+  }

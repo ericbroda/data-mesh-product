@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "dataproduct-001-query"
+  title: "Data Product 001 Query"
+  description: "Data Product 001 Query"
+  tags: ["java"]
+spec:
+  # Reserved fields
+  type: query
+  owner: user:guest
+  lifecycle: experimental
+  system: "Client Systems"
+  # Custom fields
+  statement: |
+    "select * from Accounts"
